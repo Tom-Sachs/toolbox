@@ -22,18 +22,18 @@ def numerical_features(df):
     return numerical_features
 
 
-    def plot_features(df,numerical_features):
-    '''Plots distribution, boxplot and gaussianity of the feature.
+def plot_features(df,numerical_features):
+'''Plots distribution, boxplot and gaussianity of the feature.
 
-    Parameters
-    ----------
+Parameters
+----------
 
-    df: Pandas DataFrame
-    numerical_features: List of strings
+df: Pandas DataFrame
+numerical_features: List of strings
 
-    '''
+'''
 
-    # Loop over numerical columns to plot distribution, boxplot and gaussianity
+# Loop over numerical columns to plot distribution, boxplot and gaussianity
     for numerical_feature in numerical_features:
 
         fig, ax =plt.subplots(1,3,figsize=(20,8))
